@@ -19,6 +19,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--onclick button -->
   function fireAPI(key, value){
     var request = new XMLHttpRequest()
+    alert("Hello World")
     request.open('GET', 'http://httpbin.org/get', true)
     request.onload = function() {
       var data = JSON.parse(this.response)
