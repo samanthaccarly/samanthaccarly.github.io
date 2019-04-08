@@ -22,7 +22,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function fireAPI(key, value){
     var request = new XMLHttpRequest()
     request.open('GET', 'http://httpbin.org/get', true)
-    request.onload = function() {}
+    request.onload = function() {
+      var data = JSON.parse(this.response)
+      console.log(data.url)
+    }
     request.send()
   }
   </script>
