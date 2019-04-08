@@ -16,9 +16,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'key': keyparam,
       'value': valueparam
     }];
-  </script>
-<!--onclick for button -->
-  <script>
+<!--onclick button -->
   function fireAPI(key, value){
     var request = new XMLHttpRequest()
     request.open('GET', 'http://httpbin.org/get', true)
@@ -40,6 +38,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>Impact Tech Test</p>
 <p>keyparam</p>
 <p>valueparam</p>
-<button type = "button" onclick="fireAPI()">Fire API GET</button>
+<button type = "button" onclick="fireAPI(keyparam,valueparam)">Fire API GET</button>
 </body>
 </html>
