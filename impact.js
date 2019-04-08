@@ -9,6 +9,7 @@ function fireAPI(){
   request.send()
   alert("performed send")
   request.onload = function(){
+    alert("onload ran")
     var data = JSON.parse(this.response)
     console.log(data.url)
     alert("onload ran and exit")
