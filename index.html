@@ -9,25 +9,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-K3TDRBB');</script>
 <!-- End Google Tag Manager -->
 <!-- Create and add values for dataLayer -->
-  <script>
+<script>
   keyparam = Request.QueryString(key)
   valueparam = Request.QueryString(value)
   dataLayer = [{
       'key': keyparam,
       'value': valueparam
     }];
-<!--onclick button -->
-  function fireAPI(){
-    alert("Hello World")
-    var request = new XMLHttpRequest()
-    request.open('GET', 'http://httpbin.org/get', true)
-    request.onload = function() {
-      var data = JSON.parse(this.response)
-      console.log(data.url)
-    }
-    request.send()
-  }
-  </script>
+</script>
+<script src="impact.js">
+</script>
 <head>
 <body>
   <!-- Google Tag Manager (noscript) -->
