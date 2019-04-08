@@ -7,6 +7,7 @@ function fireAPI(){
   request.onload = function() {
     var data = JSON.parse(this.response)
     console.log(data.url)
+    alert("Hello World")
   }
   request.send()
 }
