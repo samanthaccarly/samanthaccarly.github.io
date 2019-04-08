@@ -1,7 +1,7 @@
 
 
 function fireAPI(){
-  //alert("Hello World")
+  alert("Hello World")
   var request = new XMLHttpRequest()
   request.open('GET', 'http://httpbin.org/get', true)
   request.onload = function() {
