@@ -10,7 +10,7 @@ function fireAPI(){
     if (request.readystate == 4 && request.status == 200){
       alert(request.status)
       var data = JSON.parse(this.response)
-      console.log(data.url)
+      console.log(data)
       //alert("statechange ran and exit")
     }
   }
