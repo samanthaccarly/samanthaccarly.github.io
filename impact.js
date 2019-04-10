@@ -7,6 +7,8 @@ function fireAPI(){
   request.open('GET', 'https://httpbin.org/get', true)
   alert("opened API endpoint")
   request.onreadystatechange = function(){
+    console.log(request.readystate)
+    console.log(request.status)
     if (request.readystate == 4 && request.status == 200){
         console.log("readystate is 4 and status is 200")
         console.log(request.responseText)
