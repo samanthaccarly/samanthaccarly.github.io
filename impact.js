@@ -14,4 +14,5 @@ function fireAPI(){
   }
   request.send()
   alert("performed send")
+  console.log("ending")
 }
