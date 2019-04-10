@@ -19,12 +19,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Ads -->
 <!-- Create and add values for dataLayer -->
 <script>
-  keyparam = Request.QueryString(key)
-  valueparam = Request.QueryString(value)
-  dataLayer = [{
-      'key': keyparam,
-      'value': valueparam
-    }];
+  //var keyparam = Request.QueryString(key)
+  //var valueparam = Request.QueryString(value)
+  //var dataLayer = [{
+    //  'key': keyparam,
+      //'value': valueparam
+      const params = new URLSearchParams(window.location.search);
+      const keyparam = params.get('key');
+      const valueparam = params.get('value');
+      dataLayer = [{ 'key': keyparam, 'value': valueparam }];
 </script>
 <script type="text/javascript" src="impact.js"></script>
 <head>

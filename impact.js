@@ -11,7 +11,7 @@ function fireAPI(){
       alert(request.status)
       var data = JSON.parse(this.response)
       console.log(data.url)
-      alert("statechange ran and exit")
+      //alert("statechange ran and exit")
     }
   }
   request.send()
