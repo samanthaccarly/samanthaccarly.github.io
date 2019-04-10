@@ -3,19 +3,20 @@
 
 
 function fireAPI(){
+  //create new HTTP Request
   var request = new XMLHttpRequest()
+  //Open GET request
   request.open('GET', 'https://httpbin.org/get', true)
-  alert("opened API endpoint")
+  //when there is a change
   request.onreadystatechange = function(){
-    console.log(request.readyState)
-    console.log(request.status)
+    //when change is done and status is OK
     if (request.readyState == 4 && request.status == 200){
-        console.log("readystate is 4 and status is 200")
-        console.log(request.responseText)
+      //write the results to the console
+      console.log(request.responseText)
       }
-      alert("statechange ran and exit")
   }
+  //send Request
   request.send()
-  alert("performed send")
-  console.log("ending")
+  console.log(keyparam)
+
 }
