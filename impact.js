@@ -6,7 +6,7 @@ function fireAPI(){
   //create new HTTP Request
   var request = new XMLHttpRequest()
   //Open GET request
-  request.open('GET', 'https://httpbin.org/get', true)
+  request.open('GET', 'https://httpbin.org/get?key='+keyparam+'&value='+valueparam, true)
   //when there is a change
   request.onreadystatechange = function(){
     //when change is done and status is OK
